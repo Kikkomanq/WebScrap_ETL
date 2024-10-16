@@ -1,0 +1,100 @@
+---
+title: "DoYOuu Oct 2nd"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+For a demonstration of a sunburst genre plot, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "Distribution of genres on Octobar 2nd show"
+
+import pandas as pd
+import plotly.express as px
+
+# Path to your CSV file
+csv_file_path = 'tracks_table_with_genres_october_2.csv'
+
+# Initialize lists to store genres and subgenres
+genres = []
+subgenres = []
+
+# Read the CSV file line by line
+with open(csv_file_path, 'r', encoding='utf-8') as file:
+    # Skip the header
+    next(file)
+    
+    for line in file:
+        # Strip newline characters and any leading/trailing whitespace
+        line = line.strip()
+        
+        # Skip empty lines
+        if not line:
+            continue
+        
+        # Split the line by commas and strip whitespace from each part
+        parts = [part.strip() for part in line.split(",")]
+        
+        # Assign the first part as the genre
+        genre = parts[0]
+        
+        # Check if there are subgenres present
+        if len(parts) > 1 and any(parts[1:]):
+            # Iterate over subgenres (skip empty strings)
+            for subgenre in parts[1:]:
+                if subgenre:  # Ensure subgenre is not empty
+                    genres.append(genre)
+                    subgenres.append(subgenre)
+        else:
+            # Assign 'Unknown' as subgenre for lines without subgenres
+            genres.append(genre)
+            subgenres.append("Unknown")
+
+# Create the DataFrame
+df = pd.DataFrame({
+    "genre": genres,
+    "subgenre": subgenres
+})
+
+# Count the occurrences of each (genre, subgenre) pair
+subgenre_counts = df.groupby(["genre", "subgenre"]).size().reset_index(name="count")
+
+# Downscale the count of "Unknown genre" by 3x
+# This reduces the count to one-third of its original value
+subgenre_counts.loc[
+    (subgenre_counts["genre"] == "Unknown genre") & (subgenre_counts["subgenre"] == "Unknown"),
+    "count"
+] /= 3
+
+# Optional: Round the counts to two decimal places for better readability
+subgenre_counts["count"] = subgenre_counts["count"].round(2)
+
+# Define desired figure size
+desired_width = 1000  # in pixels
+desired_height = 600   # in pixels
+
+# Create the sunburst chart with increased size
+fig = px.sunburst(
+    subgenre_counts,
+    path=["genre", "subgenre"],
+    values="count",
+    color="genre",
+    color_discrete_sequence=px.colors.qualitative.Pastel,
+    hover_data=["genre", "subgenre", "count"],
+    width=desired_width,
+    height=desired_height
+)
+
+# Customize the layout
+fig.update_layout(
+    title="Genre and Subgenre Distribution (With Downscaled 'Unknown Genre')",
+    margin=dict(t=80, l=0, r=0, b=0)  # Adjust top margin to accommodate title
+)
+
+# Display the plot
+fig.show()
+
+```

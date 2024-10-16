@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DoYOuu Oct 2nd – DoYouu Genre Plots</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.35.2.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DoYouu Genre Plots</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://kikkomanq.github.io/WebScrap_ETL/"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DoYOuu Oct 2nd</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>For a demonstration of a sunburst genre plot, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="cell-fig-polar" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to your CSV file</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>csv_file_path <span class="op">=</span> <span class="st">'tracks_table_with_genres_october_2.csv'</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize lists to store genres and subgenres</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>genres <span class="op">=</span> []</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>subgenres <span class="op">=</span> []</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the CSV file line by line</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(csv_file_path, <span class="st">'r'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Skip the header</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">next</span>(<span class="bu">file</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> line <span class="kw">in</span> <span class="bu">file</span>:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Strip newline characters and any leading/trailing whitespace</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> line.strip()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Skip empty lines</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> line:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Split the line by commas and strip whitespace from each part</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        parts <span class="op">=</span> [part.strip() <span class="cf">for</span> part <span class="kw">in</span> line.split(<span class="st">","</span>)]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Assign the first part as the genre</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        genre <span class="op">=</span> parts[<span class="dv">0</span>]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if there are subgenres present</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(parts) <span class="op">&gt;</span> <span class="dv">1</span> <span class="kw">and</span> <span class="bu">any</span>(parts[<span class="dv">1</span>:]):</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Iterate over subgenres (skip empty strings)</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> subgenre <span class="kw">in</span> parts[<span class="dv">1</span>:]:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> subgenre:  <span class="co"># Ensure subgenre is not empty</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                    genres.append(genre)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>                    subgenres.append(subgenre)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Assign 'Unknown' as subgenre for lines without subgenres</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>            genres.append(genre)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>            subgenres.append(<span class="st">"Unknown"</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the DataFrame</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">"genre"</span>: genres,</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">"subgenre"</span>: subgenres</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the occurrences of each (genre, subgenre) pair</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>subgenre_counts <span class="op">=</span> df.groupby([<span class="st">"genre"</span>, <span class="st">"subgenre"</span>]).size().reset_index(name<span class="op">=</span><span class="st">"count"</span>)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Downscale the count of "Unknown genre" by 3x</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co"># This reduces the count to one-third of its original value</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>subgenre_counts.loc[</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    (subgenre_counts[<span class="st">"genre"</span>] <span class="op">==</span> <span class="st">"Unknown genre"</span>) <span class="op">&amp;</span> (subgenre_counts[<span class="st">"subgenre"</span>] <span class="op">==</span> <span class="st">"Unknown"</span>),</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="st">"count"</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>] <span class="op">/=</span> <span class="dv">3</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: Round the counts to two decimal places for better readability</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>subgenre_counts[<span class="st">"count"</span>] <span class="op">=</span> subgenre_counts[<span class="st">"count"</span>].<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co"># Define desired figure size</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>desired_width <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># in pixels</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>desired_height <span class="op">=</span> <span class="dv">600</span>   <span class="co"># in pixels</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the sunburst chart with increased size</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.sunburst(</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    subgenre_counts,</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    path<span class="op">=</span>[<span class="st">"genre"</span>, <span class="st">"subgenre"</span>],</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    values<span class="op">=</span><span class="st">"count"</span>,</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">"genre"</span>,</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    color_discrete_sequence<span class="op">=</span>px.colors.qualitative.Pastel,</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    hover_data<span class="op">=</span>[<span class="st">"genre"</span>, <span class="st">"subgenre"</span>, <span class="st">"count"</span>],</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span>desired_width,</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span>desired_height</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize the layout</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Genre and Subgenre Distribution (With Downscaled 'Unknown Genre')"</span>,</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    margin<span class="op">=</span><span class="bu">dict</span>(t<span class="op">=</span><span class="dv">80</span>, l<span class="op">=</span><span class="dv">0</span>, r<span class="op">=</span><span class="dv">0</span>, b<span class="op">=</span><span class="dv">0</span>)  <span class="co"># Adjust top margin to accommodate title</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the plot</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\milann\AppData\Local\Temp\ipykernel_9816\1880520826.py:53: FutureWarning:
+
+Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[7.33333333]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+</code></pre>
+</div>
+<div id="fig-polar" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>                            <div id="ab7feee7-af9e-421d-a4f0-b5b76727d073" class="plotly-graph-div" style="height:600px; width:1000px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ab7feee7-af9e-421d-a4f0-b5b76727d073")) {                    Plotly.newPlot(                        "ab7feee7-af9e-421d-a4f0-b5b76727d073",                        [{"branchvalues":"total","customdata":[["\"classic rock","60s",1.0,"\"classic rock"],["\"northern soul","60s",1.0,"\"northern soul"],["\"singer-songwriter","60s",1.0,"\"singer-songwriter"],["\"soul","60s",1.0,"\"soul"],["\"singer-songwriter","60s pop\"",1.0,"\"singer-songwriter"],["\"jazz","60s\"",1.0,"\"jazz"],["\"Disco","70s",3.0,"\"Disco"],["\"classic rock","70s",1.0,"\"classic rock"],["\"singer-songwriter","Alt-country",1.0,"\"singer-songwriter"],["\"dance","90s",1.0,"\"dance"],["\"House","90s",1.0,"\"House"],["\"classic rock","80s\"",1.0,"\"classic rock"],["\"pop","80s",2.0,"\"pop"],["\"House","90s dance",1.0,"\"House"],["\"glam rock","80s",1.0,"\"glam rock"],["\"classic rock","80s",1.0,"\"classic rock"],["\"Progressive rock","80s",1.0,"\"Progressive rock"],["\"Italo Disco","80s",1.0,"\"Italo Disco"],["\"soul","70s",1.0,"\"soul"],["\"new wave","80s",1.0,"\"new wave"],["\"soul","Disco",1.0,"\"soul"],["\"jazz","Disco",1.0,"\"jazz"],["\"80s","Disco",1.0,"\"80s"],["\"Hip-Hop","Dirty South",1.0,"\"Hip-Hop"],["\"House","DIsco House\"",1.0,"\"House"],["\"Hip-Hop","Crunk\"",1.0,"\"Hip-Hop"],["\"soul","Chicago Soul",1.0,"\"soul"],["\"Progressive rock","Canterbury\"",1.0,"\"Progressive rock"],["\"Progressive rock","Canterbury Scene",1.0,"\"Progressive rock"],["\"singer-songwriter","Blue-Eyed Soul",1.0,"\"singer-songwriter"],["\"Lo-Fi","Avant-Garde",1.0,"\"Lo-Fi"],["\"Acid","Chicago House\"",1.0,"\"Acid"],["\"electronic","House",1.0,"\"electronic"],["\"singer-songwriter","Lo-Fi\"",1.0,"\"singer-songwriter"],["\"80s","Italo Disco\"",1.0,"\"80s"],["\"techno","House",1.0,"\"techno"],["\"microhouse","House",1.0,"\"microhouse"],["\"electro","House",1.0,"\"electro"],["\"jazz","Hard Bop",1.0,"\"jazz"],["\"acid jazz","House",1.0,"\"acid jazz"],["\"pop","Hip-Hop\"",1.0,"\"pop"],["\"techno","Hip-Hop",1.0,"\"techno"],["\"doom metal","Doom",1.0,"\"doom metal"],["\"deep house","House",3.0,"\"deep house"],["\"House","Old school Hardcore\"",1.0,"\"House"],["\"ska","Olivia Bouyssou\"",1.0,"\"ska"],["\"soul","Penrose\"",1.0,"\"soul"],["\"Melodic Power Metal","Power metal",1.0,"\"Melodic Power Metal"],["\"electronic","Progressive House",1.0,"\"electronic"],["\"Melodic Power Metal","Progressive metal",1.0,"\"Melodic Power Metal"],["\"electronic","Rave",1.0,"\"electronic"],["\"Hip-Hop","Reggaeton",1.0,"\"Hip-Hop"],["\"soul","Southern Soul\"",1.0,"\"soul"],["\"new wave","Sophisti-Pop\"",1.0,"\"new wave"],["\"doom metal","Sludge",1.0,"\"doom metal"],["\"House","Scottish",1.0,"\"House"],["\"Acid","acid house",1.0,"\"Acid"],["\"House","Totec Radio\"",1.0,"\"House"],["\"soul","USA",1.0,"\"soul"],["\"USA","United States\"",1.0,"\"USA"],["\"soul","United States\"",1.0,"\"soul"],["Austria","Unknown",1.0,"Austria"],["G-funk","Unknown",1.0,"G-funk"],["House","Unknown",1.0,"House"],["Unknown genre","Unknown",7.33,"Unknown genre"],["funk","Unknown",2.0,"funk"],["\"idm","Warp",1.0,"\"idm"],["\"Hip-Hop","alternative rap",1.0,"\"Hip-Hop"],["\"electronic","alternative",1.0,"\"electronic"],["\"Hip-Hop","alternative rap\"",1.0,"\"Hip-Hop"],["\"blues","alternative\"",1.0,"\"blues"],["\"electronic","ambient",1.0,"\"electronic"],["\"industrial","ambient",1.0,"\"industrial"],["\"industrial","ambient\"",1.0,"\"industrial"],["\"reggae","arabic\"",1.0,"\"reggae"],["\"jazz","bebop\"",1.0,"\"jazz"],["\"country","before 1960\"",1.0,"\"country"],["\"doom metal","black metal",1.0,"\"doom metal"],["\"classic rock","blue eyed soul",1.0,"\"classic rock"],["\"cajun","bluegrass",1.0,"\"cajun"],["\"classic rock","blues",1.0,"\"classic rock"],["\"ambient","chillout",1.0,"\"ambient"],["\"soul","chicano soul",1.0,"\"soul"],["\"classic rock","blues\"",1.0,"\"classic rock"],["\"classic rock","british",2.0,"\"classic rock"],["\"reggae","chillout",1.0,"\"reggae"],["\"country","classic country",1.0,"\"country"],["\"Progressive rock","classic rock",1.0,"\"Progressive rock"],["\"hard rock","classic rock",1.0,"\"hard rock"],["\"trance","dance",1.0,"\"trance"],["\"industrial","dark ambient",1.0,"\"industrial"],["\"emo","dark ambient",1.0,"\"emo"],["\"soul","daptone",1.0,"\"soul"],["\"acid jazz","dance\"",1.0,"\"acid jazz"],["\"pop","dance",1.0,"\"pop"],["\"House","dfa",1.0,"\"House"],["\"electronic","dance",1.0,"\"electronic"],["\"House","dance",3.0,"\"House"],["\"Disco","dance",1.0,"\"Disco"],["\"cajun","country",1.0,"\"cajun"],["\"House","club",1.0,"\"House"],["\"Progressive rock","classic rock\"",1.0,"\"Progressive rock"],["\"electronica","dance",1.0,"\"electronica"],["\"deep house","dubstep\"",1.0,"\"deep house"],["\"jazz","easy listening",1.0,"\"jazz"],["\"chillout","downtempo\"",1.0,"\"chillout"],["\"dance","dub",1.0,"\"dance"],["\"electronic","electro house\"",1.0,"\"electronic"],["\"House","electro\"",1.0,"\"House"],["\"Disco","electronic",1.0,"\"Disco"],["\"House","electronic",3.0,"\"House"],["\"acid jazz","electronic",1.0,"\"acid jazz"],["\"ambient","electronic",1.0,"\"ambient"],["\"chillout","electronic",1.0,"\"chillout"],["\"dance","electronic",1.0,"\"dance"],["\"techno","electronic",1.0,"\"techno"],["\"Progressive rock","electronic\"",1.0,"\"Progressive rock"],["\"industrial","electronic",2.0,"\"industrial"],["\"deep house","electronic",3.0,"\"deep house"],["\"experimental","electronic",1.0,"\"experimental"],["\"electronica","electronic",1.0,"\"electronica"],["\"idm","electronic",1.0,"\"idm"],["\"ambient","electronica",1.0,"\"ambient"],["\"experimental","electronica",1.0,"\"experimental"],["\"idm","electronica",1.0,"\"idm"],["\"electronic","electronica\"",1.0,"\"electronic"],["\"Progressive rock","experimental",1.0,"\"Progressive rock"],["\"Lo-Fi","experimental",1.0,"\"Lo-Fi"],["\"Italo Disco","eurodance",1.0,"\"Italo Disco"],["\"industrial","electronica\"",1.0,"\"industrial"],["\"polish","female vocalists",1.0,"\"polish"],["\"cajun","folk",1.0,"\"cajun"],["\"singer-songwriter","female vocalists",1.0,"\"singer-songwriter"],["\"reggae","female vocalists",1.0,"\"reggae"],["\"pop","female vocalists",1.0,"\"pop"],["\"electronic","female vocalists",1.0,"\"electronic"],["\"math rock","experimental",1.0,"\"math rock"],["\"Disco","female vocalists",1.0,"\"Disco"],["\"blues","experimental",1.0,"\"blues"],["\"electronic","experimental",2.0,"\"electronic"],["\"Progressive rock","female vocalists",1.0,"\"Progressive rock"],["\"idm","experimental\"",1.0,"\"idm"],["\"industrial","experimental",2.0,"\"industrial"],["\"singer-songwriter","folk",1.0,"\"singer-songwriter"],["\"Disco","funk",1.0,"\"Disco"],["\"Progressive rock","funk",1.0,"\"Progressive rock"],["\"USA","funk",1.0,"\"USA"],["\"soul","funk",3.0,"\"soul"],["\"electro","funky",1.0,"\"electro"],["\"pop","german",1.0,"\"pop"],["\"electro","german\"",1.0,"\"electro"],["\"classic rock","guitar\"",1.0,"\"classic rock"],["\"electro","germany",1.0,"\"electro"],["\"Acid","gigolo",1.0,"\"Acid"],["\"coldwave","hardcore\"",1.0,"\"coldwave"],["\"electronic","icelandic\"",1.0,"\"electronic"],["\"Hip-Hop","hip hop\"",1.0,"\"Hip-Hop"],["\"hard rock","heavy metal\"",1.0,"\"hard rock"],["\"Hip-Hop","hip hop",3.0,"\"Hip-Hop"],["\"electronic","idm",1.0,"\"electronic"],["\"experimental","idm",1.0,"\"experimental"],["\"ambient","idm\"",1.0,"\"ambient"],["\"jazz","instrumental",1.0,"\"jazz"],["\"math rock","instrumental",1.0,"\"math rock"],["\"hard rock","irish",1.0,"\"hard rock"],["\"math rock","irish",1.0,"\"math rock"],["\"reggae","jamaica\"",1.0,"\"reggae"],["\"jazz","latin",1.0,"\"jazz"],["\"reggae","libyan",1.0,"\"reggae"],["\"electronic","lithuania\"",1.0,"\"electronic"],["\"Disco","jorge santana",1.0,"\"Disco"],["\"acid jazz","japanese",1.0,"\"acid jazz"],["\"jazz","jazz piano",1.0,"\"jazz"],["\"soul","los angeles",1.0,"\"soul"],["\"chillout","lounge",1.0,"\"chillout"],["\"reggae","lovers rock",1.0,"\"reggae"],["\"country","male vocalists",1.0,"\"country"],["\"soul","male\"",1.0,"\"soul"],["\"coldwave","melodic hardcore",1.0,"\"coldwave"],["\"soul","memphis\"",1.0,"\"soul"],["\"coldwave","metalcore",1.0,"\"coldwave"],["\"deep house","minimal",2.0,"\"deep house"],["\"microhouse","minimal",1.0,"\"microhouse"],["\"microhouse","minimal house\"",1.0,"\"microhouse"],["\"deep house","minimal techno",1.0,"\"deep house"],["\"80s","new wave",1.0,"\"80s"],["\"pop","musicals\"",1.0,"\"pop"],["\"soul","motown",1.0,"\"soul"],["\"microhouse","minimal techno",1.0,"\"microhouse"],["\"Italo Disco","new wave",1.0,"\"Italo Disco"],["\"glam rock","new wave",1.0,"\"glam rock"],["\"soul","northern soul",1.0,"\"soul"],["\"Disco","not streamable\"",1.0,"\"Disco"],["\"Disco","nu disco",1.0,"\"Disco"],["\"country","oldies",1.0,"\"country"],["\"soul","oldies",1.0,"\"soul"],["\"northern soul","oldies\"",1.0,"\"northern soul"],["\"ska","origem desconhecida",1.0,"\"ska"],["\"jazz","piano",1.0,"\"jazz"],["\"polish","polskie\"",1.0,"\"polish"],["\"80s","pop",1.0,"\"80s"],["\"polish","pop",1.0,"\"polish"],["\"new wave","pop",1.0,"\"new wave"],["\"Lo-Fi","pop",1.0,"\"Lo-Fi"],["\"classic rock","pop",2.0,"\"classic rock"],["\"Disco","pop\"",2.0,"\"Disco"],["\"classic rock","pop\"",1.0,"\"classic rock"],["\"dance","pop\"",1.0,"\"dance"],["\"glam rock","pop\"",1.0,"\"glam rock"],["\"Disco","portuguese\"",1.0,"\"Disco"],["\"emo","post hardcore\"",1.0,"\"emo"],["\"emo","post-hardcore",1.0,"\"emo"],["\"soul","reggae\"",1.0,"\"soul"],["\"soul","rnb\"",2.0,"\"soul"],["\"pop","rnb",1.0,"\"pop"],["\"House","rhytmn house",1.0,"\"House"],["\"soul","rhythm and blues",3.0,"\"soul"],["\"northern soul","rhythm and blues",1.0,"\"northern soul"],["\"Hip-Hop","rap",3.0,"\"Hip-Hop"],["\"ska","reggae",1.0,"\"ska"],["\"Hip-Hop","rap\"",1.0,"\"Hip-Hop"],["\"doom metal","psychedelic\"",1.0,"\"doom metal"],["\"new wave","post-punk",1.0,"\"new wave"],["\"coldwave","post-punk",1.0,"\"coldwave"],["\"polish","rock",1.0,"\"polish"],["\"math rock","rock\"",1.0,"\"math rock"],["\"hard rock","rock",1.0,"\"hard rock"],["\"Progressive rock","rock",2.0,"\"Progressive rock"],["\"classic rock","rock",5.0,"\"classic rock"],["\"blues","rock",1.0,"\"blues"],["\"reggae","rocksteady\"",1.0,"\"reggae"],["\"glam rock","rock",1.0,"\"glam rock"],["\"jazz","sax",1.0,"\"jazz"],["\"jazz","saxophone",1.0,"\"jazz"],["\"reggae","roots",1.0,"\"reggae"],["\"electronica","techno",1.0,"\"electronica"],["\"Disco","soul",1.0,"\"Disco"],["\"Acid","techno",1.0,"\"Acid"],["\"deep house","tech house\"",1.0,"\"deep house"],["\"Lo-Fi","synthpop\"",1.0,"\"Lo-Fi"],["\"soul","stax",1.0,"\"soul"],["\"classic rock","space rock\"",1.0,"\"classic rock"],["\"Disco","space disco",1.0,"\"Disco"],["\"northern soul","soul",1.0,"\"northern soul"],["\"Melodic Power Metal","slovenian\"",1.0,"\"Melodic Power Metal"],["\"emo","screamo",1.0,"\"emo"],["\"reggae","ska",1.0,"\"reggae"],["\"reggae","skinhead reggae",1.0,"\"reggae"],["\"singer-songwriter","seen live",1.0,"\"singer-songwriter"],["\"electronica","seen live\"",1.0,"\"electronica"],["\"techno","seen live\"",1.0,"\"techno"],["\"Hip-Hop","seen live",1.0,"\"Hip-Hop"],["\"blues","singer-songwriter",1.0,"\"blues"],["\"classic rock","singer-songwriter",1.0,"\"classic rock"],["\"reggae","singer-songwriter",1.0,"\"reggae"],["\"Progressive rock","singer-songwriter",1.0,"\"Progressive rock"],["\"deep house","techno\"",1.0,"\"deep house"],["\"trance","techno\"",1.0,"\"trance"],["\"Melodic Power Metal","thrash metal",1.0,"\"Melodic Power Metal"],["\"Hip-Hop","trap",1.0,"\"Hip-Hop"],["\"Italo Disco","under 2000 listeners\"",1.0,"\"Italo Disco"],["\"chillout","trip-hop",1.0,"\"chillout"],["\"experimental","under 2000 listeners\"",1.0,"\"experimental"],["\"jazz","under 2000 listeners\"",1.0,"\"jazz"],["\"Hip-Hop","underground hip-hop",1.0,"\"Hip-Hop"],["\"reggae","vocal",1.0,"\"reggae"],["\"cajun","world\"",1.0,"\"cajun"],["\"80s","(?)",4.0,"\"80s"],["\"Acid","(?)",4.0,"\"Acid"],["\"Disco","(?)",15.0,"\"Disco"],["\"Hip-Hop","(?)",16.0,"\"Hip-Hop"],["\"House","(?)",16.0,"\"House"],["\"Italo Disco","(?)",4.0,"\"Italo Disco"],["\"Lo-Fi","(?)",4.0,"\"Lo-Fi"],["\"Melodic Power Metal","(?)",4.0,"\"Melodic Power Metal"],["\"Progressive rock","(?)",12.0,"\"Progressive rock"],["\"USA","(?)",2.0,"\"USA"],["\"acid jazz","(?)",4.0,"\"acid jazz"],["\"ambient","(?)",4.0,"\"ambient"],["\"blues","(?)",4.0,"\"blues"],["\"cajun","(?)",4.0,"\"cajun"],["\"chillout","(?)",4.0,"\"chillout"],["\"classic rock","(?)",20.0,"\"classic rock"],["\"coldwave","(?)",4.0,"\"coldwave"],["\"country","(?)",4.0,"\"country"],["\"dance","(?)",4.0,"\"dance"],["\"deep house","(?)",12.0,"\"deep house"],["\"doom metal","(?)",4.0,"\"doom metal"],["\"electro","(?)",4.0,"\"electro"],["\"electronic","(?)",14.0,"\"electronic"],["\"electronica","(?)",4.0,"\"electronica"],["\"emo","(?)",4.0,"\"emo"],["\"experimental","(?)",4.0,"\"experimental"],["\"glam rock","(?)",4.0,"\"glam rock"],["\"hard rock","(?)",4.0,"\"hard rock"],["\"idm","(?)",4.0,"\"idm"],["\"industrial","(?)",8.0,"\"industrial"],["\"jazz","(?)",12.0,"\"jazz"],["\"math rock","(?)",4.0,"\"math rock"],["\"microhouse","(?)",4.0,"\"microhouse"],["\"new wave","(?)",4.0,"\"new wave"],["\"northern soul","(?)",4.0,"\"northern soul"],["\"polish","(?)",4.0,"\"polish"],["\"pop","(?)",8.0,"\"pop"],["\"reggae","(?)",12.0,"\"reggae"],["\"singer-songwriter","(?)",8.0,"\"singer-songwriter"],["\"ska","(?)",3.0,"\"ska"],["\"soul","(?)",26.0,"\"soul"],["\"techno","(?)",4.0,"\"techno"],["\"trance","(?)",2.0,"\"trance"],["Austria","Unknown",1.0,"Austria"],["G-funk","Unknown",1.0,"G-funk"],["House","Unknown",1.0,"House"],["Unknown genre","Unknown",7.33,"Unknown genre"],["funk","Unknown",2.0,"funk"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"labels=%{label}\u003cbr\u003ecount=%{customdata[2]}\u003cbr\u003eparent=%{parent}\u003cbr\u003eid=%{id}\u003cbr\u003egenre=%{customdata[3]}\u003cbr\u003esubgenre=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","ids":["\"classic rock\u002f60s","\"northern soul\u002f60s","\"singer-songwriter\u002f60s","\"soul\u002f60s","\"singer-songwriter\u002f60s pop\"","\"jazz\u002f60s\"","\"Disco\u002f70s","\"classic rock\u002f70s","\"singer-songwriter\u002fAlt-country","\"dance\u002f90s","\"House\u002f90s","\"classic rock\u002f80s\"","\"pop\u002f80s","\"House\u002f90s dance","\"glam rock\u002f80s","\"classic rock\u002f80s","\"Progressive rock\u002f80s","\"Italo Disco\u002f80s","\"soul\u002f70s","\"new wave\u002f80s","\"soul\u002fDisco","\"jazz\u002fDisco","\"80s\u002fDisco","\"Hip-Hop\u002fDirty South","\"House\u002fDIsco House\"","\"Hip-Hop\u002fCrunk\"","\"soul\u002fChicago Soul","\"Progressive rock\u002fCanterbury\"","\"Progressive rock\u002fCanterbury Scene","\"singer-songwriter\u002fBlue-Eyed Soul","\"Lo-Fi\u002fAvant-Garde","\"Acid\u002fChicago House\"","\"electronic\u002fHouse","\"singer-songwriter\u002fLo-Fi\"","\"80s\u002fItalo Disco\"","\"techno\u002fHouse","\"microhouse\u002fHouse","\"electro\u002fHouse","\"jazz\u002fHard Bop","\"acid jazz\u002fHouse","\"pop\u002fHip-Hop\"","\"techno\u002fHip-Hop","\"doom metal\u002fDoom","\"deep house\u002fHouse","\"House\u002fOld school Hardcore\"","\"ska\u002fOlivia Bouyssou\"","\"soul\u002fPenrose\"","\"Melodic Power Metal\u002fPower metal","\"electronic\u002fProgressive House","\"Melodic Power Metal\u002fProgressive metal","\"electronic\u002fRave","\"Hip-Hop\u002fReggaeton","\"soul\u002fSouthern Soul\"","\"new wave\u002fSophisti-Pop\"","\"doom metal\u002fSludge","\"House\u002fScottish","\"Acid\u002facid house","\"House\u002fTotec Radio\"","\"soul\u002fUSA","\"USA\u002fUnited States\"","\"soul\u002fUnited States\"","Austria\u002fUnknown","G-funk\u002fUnknown","House\u002fUnknown","Unknown genre\u002fUnknown","funk\u002fUnknown","\"idm\u002fWarp","\"Hip-Hop\u002falternative rap","\"electronic\u002falternative","\"Hip-Hop\u002falternative rap\"","\"blues\u002falternative\"","\"electronic\u002fambient","\"industrial\u002fambient","\"industrial\u002fambient\"","\"reggae\u002farabic\"","\"jazz\u002fbebop\"","\"country\u002fbefore 1960\"","\"doom metal\u002fblack metal","\"classic rock\u002fblue eyed soul","\"cajun\u002fbluegrass","\"classic rock\u002fblues","\"ambient\u002fchillout","\"soul\u002fchicano soul","\"classic rock\u002fblues\"","\"classic rock\u002fbritish","\"reggae\u002fchillout","\"country\u002fclassic country","\"Progressive rock\u002fclassic rock","\"hard rock\u002fclassic rock","\"trance\u002fdance","\"industrial\u002fdark ambient","\"emo\u002fdark ambient","\"soul\u002fdaptone","\"acid jazz\u002fdance\"","\"pop\u002fdance","\"House\u002fdfa","\"electronic\u002fdance","\"House\u002fdance","\"Disco\u002fdance","\"cajun\u002fcountry","\"House\u002fclub","\"Progressive rock\u002fclassic rock\"","\"electronica\u002fdance","\"deep house\u002fdubstep\"","\"jazz\u002feasy listening","\"chillout\u002fdowntempo\"","\"dance\u002fdub","\"electronic\u002felectro house\"","\"House\u002felectro\"","\"Disco\u002felectronic","\"House\u002felectronic","\"acid jazz\u002felectronic","\"ambient\u002felectronic","\"chillout\u002felectronic","\"dance\u002felectronic","\"techno\u002felectronic","\"Progressive rock\u002felectronic\"","\"industrial\u002felectronic","\"deep house\u002felectronic","\"experimental\u002felectronic","\"electronica\u002felectronic","\"idm\u002felectronic","\"ambient\u002felectronica","\"experimental\u002felectronica","\"idm\u002felectronica","\"electronic\u002felectronica\"","\"Progressive rock\u002fexperimental","\"Lo-Fi\u002fexperimental","\"Italo Disco\u002feurodance","\"industrial\u002felectronica\"","\"polish\u002ffemale vocalists","\"cajun\u002ffolk","\"singer-songwriter\u002ffemale vocalists","\"reggae\u002ffemale vocalists","\"pop\u002ffemale vocalists","\"electronic\u002ffemale vocalists","\"math rock\u002fexperimental","\"Disco\u002ffemale vocalists","\"blues\u002fexperimental","\"electronic\u002fexperimental","\"Progressive rock\u002ffemale vocalists","\"idm\u002fexperimental\"","\"industrial\u002fexperimental","\"singer-songwriter\u002ffolk","\"Disco\u002ffunk","\"Progressive rock\u002ffunk","\"USA\u002ffunk","\"soul\u002ffunk","\"electro\u002ffunky","\"pop\u002fgerman","\"electro\u002fgerman\"","\"classic rock\u002fguitar\"","\"electro\u002fgermany","\"Acid\u002fgigolo","\"coldwave\u002fhardcore\"","\"electronic\u002ficelandic\"","\"Hip-Hop\u002fhip hop\"","\"hard rock\u002fheavy metal\"","\"Hip-Hop\u002fhip hop","\"electronic\u002fidm","\"experimental\u002fidm","\"ambient\u002fidm\"","\"jazz\u002finstrumental","\"math rock\u002finstrumental","\"hard rock\u002firish","\"math rock\u002firish","\"reggae\u002fjamaica\"","\"jazz\u002flatin","\"reggae\u002flibyan","\"electronic\u002flithuania\"","\"Disco\u002fjorge santana","\"acid jazz\u002fjapanese","\"jazz\u002fjazz piano","\"soul\u002flos angeles","\"chillout\u002flounge","\"reggae\u002flovers rock","\"country\u002fmale vocalists","\"soul\u002fmale\"","\"coldwave\u002fmelodic hardcore","\"soul\u002fmemphis\"","\"coldwave\u002fmetalcore","\"deep house\u002fminimal","\"microhouse\u002fminimal","\"microhouse\u002fminimal house\"","\"deep house\u002fminimal techno","\"80s\u002fnew wave","\"pop\u002fmusicals\"","\"soul\u002fmotown","\"microhouse\u002fminimal techno","\"Italo Disco\u002fnew wave","\"glam rock\u002fnew wave","\"soul\u002fnorthern soul","\"Disco\u002fnot streamable\"","\"Disco\u002fnu disco","\"country\u002foldies","\"soul\u002foldies","\"northern soul\u002foldies\"","\"ska\u002forigem desconhecida","\"jazz\u002fpiano","\"polish\u002fpolskie\"","\"80s\u002fpop","\"polish\u002fpop","\"new wave\u002fpop","\"Lo-Fi\u002fpop","\"classic rock\u002fpop","\"Disco\u002fpop\"","\"classic rock\u002fpop\"","\"dance\u002fpop\"","\"glam rock\u002fpop\"","\"Disco\u002fportuguese\"","\"emo\u002fpost hardcore\"","\"emo\u002fpost-hardcore","\"soul\u002freggae\"","\"soul\u002frnb\"","\"pop\u002frnb","\"House\u002frhytmn house","\"soul\u002frhythm and blues","\"northern soul\u002frhythm and blues","\"Hip-Hop\u002frap","\"ska\u002freggae","\"Hip-Hop\u002frap\"","\"doom metal\u002fpsychedelic\"","\"new wave\u002fpost-punk","\"coldwave\u002fpost-punk","\"polish\u002frock","\"math rock\u002frock\"","\"hard rock\u002frock","\"Progressive rock\u002frock","\"classic rock\u002frock","\"blues\u002frock","\"reggae\u002frocksteady\"","\"glam rock\u002frock","\"jazz\u002fsax","\"jazz\u002fsaxophone","\"reggae\u002froots","\"electronica\u002ftechno","\"Disco\u002fsoul","\"Acid\u002ftechno","\"deep house\u002ftech house\"","\"Lo-Fi\u002fsynthpop\"","\"soul\u002fstax","\"classic rock\u002fspace rock\"","\"Disco\u002fspace disco","\"northern soul\u002fsoul","\"Melodic Power Metal\u002fslovenian\"","\"emo\u002fscreamo","\"reggae\u002fska","\"reggae\u002fskinhead reggae","\"singer-songwriter\u002fseen live","\"electronica\u002fseen live\"","\"techno\u002fseen live\"","\"Hip-Hop\u002fseen live","\"blues\u002fsinger-songwriter","\"classic rock\u002fsinger-songwriter","\"reggae\u002fsinger-songwriter","\"Progressive rock\u002fsinger-songwriter","\"deep house\u002ftechno\"","\"trance\u002ftechno\"","\"Melodic Power Metal\u002fthrash metal","\"Hip-Hop\u002ftrap","\"Italo Disco\u002funder 2000 listeners\"","\"chillout\u002ftrip-hop","\"experimental\u002funder 2000 listeners\"","\"jazz\u002funder 2000 listeners\"","\"Hip-Hop\u002funderground hip-hop","\"reggae\u002fvocal","\"cajun\u002fworld\"","\"80s","\"Acid","\"Disco","\"Hip-Hop","\"House","\"Italo Disco","\"Lo-Fi","\"Melodic Power Metal","\"Progressive rock","\"USA","\"acid jazz","\"ambient","\"blues","\"cajun","\"chillout","\"classic rock","\"coldwave","\"country","\"dance","\"deep house","\"doom metal","\"electro","\"electronic","\"electronica","\"emo","\"experimental","\"glam rock","\"hard rock","\"idm","\"industrial","\"jazz","\"math rock","\"microhouse","\"new wave","\"northern soul","\"polish","\"pop","\"reggae","\"singer-songwriter","\"ska","\"soul","\"techno","\"trance","Austria","G-funk","House","Unknown genre","funk"],"labels":["60s","60s","60s","60s","60s pop\"","60s\"","70s","70s","Alt-country","90s","90s","80s\"","80s","90s dance","80s","80s","80s","80s","70s","80s","Disco","Disco","Disco","Dirty South","DIsco House\"","Crunk\"","Chicago Soul","Canterbury\"","Canterbury Scene","Blue-Eyed Soul","Avant-Garde","Chicago House\"","House","Lo-Fi\"","Italo Disco\"","House","House","House","Hard Bop","House","Hip-Hop\"","Hip-Hop","Doom","House","Old school Hardcore\"","Olivia Bouyssou\"","Penrose\"","Power metal","Progressive House","Progressive metal","Rave","Reggaeton","Southern Soul\"","Sophisti-Pop\"","Sludge","Scottish","acid house","Totec Radio\"","USA","United States\"","United States\"","Unknown","Unknown","Unknown","Unknown","Unknown","Warp","alternative rap","alternative","alternative rap\"","alternative\"","ambient","ambient","ambient\"","arabic\"","bebop\"","before 1960\"","black metal","blue eyed soul","bluegrass","blues","chillout","chicano soul","blues\"","british","chillout","classic country","classic rock","classic rock","dance","dark ambient","dark ambient","daptone","dance\"","dance","dfa","dance","dance","dance","country","club","classic rock\"","dance","dubstep\"","easy listening","downtempo\"","dub","electro house\"","electro\"","electronic","electronic","electronic","electronic","electronic","electronic","electronic","electronic\"","electronic","electronic","electronic","electronic","electronic","electronica","electronica","electronica","electronica\"","experimental","experimental","eurodance","electronica\"","female vocalists","folk","female vocalists","female vocalists","female vocalists","female vocalists","experimental","female vocalists","experimental","experimental","female vocalists","experimental\"","experimental","folk","funk","funk","funk","funk","funky","german","german\"","guitar\"","germany","gigolo","hardcore\"","icelandic\"","hip hop\"","heavy metal\"","hip hop","idm","idm","idm\"","instrumental","instrumental","irish","irish","jamaica\"","latin","libyan","lithuania\"","jorge santana","japanese","jazz piano","los angeles","lounge","lovers rock","male vocalists","male\"","melodic hardcore","memphis\"","metalcore","minimal","minimal","minimal house\"","minimal techno","new wave","musicals\"","motown","minimal techno","new wave","new wave","northern soul","not streamable\"","nu disco","oldies","oldies","oldies\"","origem desconhecida","piano","polskie\"","pop","pop","pop","pop","pop","pop\"","pop\"","pop\"","pop\"","portuguese\"","post hardcore\"","post-hardcore","reggae\"","rnb\"","rnb","rhytmn house","rhythm and blues","rhythm and blues","rap","reggae","rap\"","psychedelic\"","post-punk","post-punk","rock","rock\"","rock","rock","rock","rock","rocksteady\"","rock","sax","saxophone","roots","techno","soul","techno","tech house\"","synthpop\"","stax","space rock\"","space disco","soul","slovenian\"","screamo","ska","skinhead reggae","seen live","seen live\"","seen live\"","seen live","singer-songwriter","singer-songwriter","singer-songwriter","singer-songwriter","techno\"","techno\"","thrash metal","trap","under 2000 listeners\"","trip-hop","under 2000 listeners\"","under 2000 listeners\"","underground hip-hop","vocal","world\"","\"80s","\"Acid","\"Disco","\"Hip-Hop","\"House","\"Italo Disco","\"Lo-Fi","\"Melodic Power Metal","\"Progressive rock","\"USA","\"acid jazz","\"ambient","\"blues","\"cajun","\"chillout","\"classic rock","\"coldwave","\"country","\"dance","\"deep house","\"doom metal","\"electro","\"electronic","\"electronica","\"emo","\"experimental","\"glam rock","\"hard rock","\"idm","\"industrial","\"jazz","\"math rock","\"microhouse","\"new wave","\"northern soul","\"polish","\"pop","\"reggae","\"singer-songwriter","\"ska","\"soul","\"techno","\"trance","Austria","G-funk","House","Unknown genre","funk"],"marker":{"colors":["rgb(102, 197, 204)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(158, 185, 243)","rgb(102, 197, 204)","rgb(248, 156, 116)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(102, 197, 204)","rgb(139, 224, 164)","rgb(201, 219, 116)","rgb(180, 151, 231)","rgb(102, 197, 204)","rgb(179, 179, 179)","rgb(102, 197, 204)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(220, 176, 242)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(201, 219, 116)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(179, 179, 179)","rgb(179, 179, 179)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(158, 185, 243)","rgb(254, 136, 177)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(201, 219, 116)","rgb(139, 224, 164)","rgb(180, 151, 231)","rgb(135, 197, 95)","rgb(179, 179, 179)","rgb(139, 224, 164)","rgb(201, 219, 116)","rgb(102, 197, 204)","rgb(246, 207, 113)","rgb(201, 219, 116)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(102, 197, 204)","rgb(201, 219, 116)","rgb(158, 185, 243)","rgb(201, 219, 116)","rgb(220, 176, 242)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(158, 185, 243)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(139, 224, 164)","rgb(180, 151, 231)","rgb(179, 179, 179)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(254, 136, 177)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(102, 197, 204)","rgb(135, 197, 95)","rgb(102, 197, 204)","rgb(158, 185, 243)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(102, 197, 204)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(179, 179, 179)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(246, 207, 113)","rgb(139, 224, 164)","rgb(220, 176, 242)","rgb(179, 179, 179)","rgb(139, 224, 164)","rgb(201, 219, 116)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(158, 185, 243)","rgb(135, 197, 95)","rgb(201, 219, 116)","rgb(179, 179, 179)","rgb(180, 151, 231)","rgb(246, 207, 113)","rgb(135, 197, 95)","rgb(179, 179, 179)","rgb(254, 136, 177)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(158, 185, 243)","rgb(201, 219, 116)","rgb(179, 179, 179)","rgb(158, 185, 243)","rgb(179, 179, 179)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(179, 179, 179)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(102, 197, 204)","rgb(180, 151, 231)","rgb(179, 179, 179)","rgb(158, 185, 243)","rgb(102, 197, 204)","rgb(179, 179, 179)","rgb(254, 136, 177)","rgb(179, 179, 179)","rgb(135, 197, 95)","rgb(102, 197, 204)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(139, 224, 164)","rgb(254, 136, 177)","rgb(248, 156, 116)","rgb(158, 185, 243)","rgb(102, 197, 204)","rgb(254, 136, 177)","rgb(179, 179, 179)","rgb(179, 179, 179)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(158, 185, 243)","rgb(179, 179, 179)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(180, 151, 231)","rgb(139, 224, 164)","rgb(180, 151, 231)","rgb(102, 197, 204)","rgb(180, 151, 231)","rgb(158, 185, 243)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(102, 197, 204)","rgb(158, 185, 243)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(254, 136, 177)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(254, 136, 177)","rgb(158, 185, 243)","rgb(179, 179, 179)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(179, 179, 179)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(139, 224, 164)","rgb(139, 224, 164)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(139, 224, 164)","rgb(220, 176, 242)","rgb(139, 224, 164)","rgb(102, 197, 204)","rgb(180, 151, 231)","rgb(220, 176, 242)","rgb(158, 185, 243)","rgb(158, 185, 243)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(135, 197, 95)","rgb(102, 197, 204)","rgb(158, 185, 243)","rgb(102, 197, 204)","rgb(254, 136, 177)","rgb(180, 151, 231)","rgb(158, 185, 243)","rgb(139, 224, 164)","rgb(139, 224, 164)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(139, 224, 164)","rgb(201, 219, 116)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(220, 176, 242)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(246, 207, 113)","rgb(220, 176, 242)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(254, 136, 177)","rgb(179, 179, 179)","rgb(102, 197, 204)","rgb(102, 197, 204)","rgb(248, 156, 116)","rgb(180, 151, 231)","rgb(135, 197, 95)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(180, 151, 231)","rgb(158, 185, 243)","rgb(158, 185, 243)","rgb(246, 207, 113)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(158, 185, 243)","rgb(246, 207, 113)","rgb(220, 176, 242)","rgb(139, 224, 164)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(180, 151, 231)","rgb(201, 219, 116)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(102, 197, 204)","rgb(248, 156, 116)","rgb(179, 179, 179)","rgb(246, 207, 113)","rgb(201, 219, 116)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(102, 197, 204)","rgb(179, 179, 179)","rgb(102, 197, 204)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(248, 156, 116)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(158, 185, 243)","rgb(158, 185, 243)","rgb(220, 176, 242)","rgb(201, 219, 116)","rgb(102, 197, 204)","rgb(135, 197, 95)","rgb(220, 176, 242)","rgb(179, 179, 179)","rgb(135, 197, 95)","rgb(179, 179, 179)","rgb(158, 185, 243)","rgb(102, 197, 204)","rgb(135, 197, 95)","rgb(179, 179, 179)","rgb(102, 197, 204)","rgb(220, 176, 242)","rgb(220, 176, 242)","rgb(254, 136, 177)","rgb(246, 207, 113)","rgb(102, 197, 204)","rgb(180, 151, 231)","rgb(254, 136, 177)","rgb(180, 151, 231)","rgb(139, 224, 164)","rgb(102, 197, 204)","rgb(180, 151, 231)","rgb(254, 136, 177)","rgb(179, 179, 179)","rgb(246, 207, 113)","rgb(135, 197, 95)","rgb(248, 156, 116)","rgb(139, 224, 164)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(246, 207, 113)","rgb(139, 224, 164)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(201, 219, 116)","rgb(201, 219, 116)","rgb(158, 185, 243)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(139, 224, 164)","rgb(180, 151, 231)"]},"name":"","parents":["\"classic rock","\"northern soul","\"singer-songwriter","\"soul","\"singer-songwriter","\"jazz","\"Disco","\"classic rock","\"singer-songwriter","\"dance","\"House","\"classic rock","\"pop","\"House","\"glam rock","\"classic rock","\"Progressive rock","\"Italo Disco","\"soul","\"new wave","\"soul","\"jazz","\"80s","\"Hip-Hop","\"House","\"Hip-Hop","\"soul","\"Progressive rock","\"Progressive rock","\"singer-songwriter","\"Lo-Fi","\"Acid","\"electronic","\"singer-songwriter","\"80s","\"techno","\"microhouse","\"electro","\"jazz","\"acid jazz","\"pop","\"techno","\"doom metal","\"deep house","\"House","\"ska","\"soul","\"Melodic Power Metal","\"electronic","\"Melodic Power Metal","\"electronic","\"Hip-Hop","\"soul","\"new wave","\"doom metal","\"House","\"Acid","\"House","\"soul","\"USA","\"soul","Austria","G-funk","House","Unknown genre","funk","\"idm","\"Hip-Hop","\"electronic","\"Hip-Hop","\"blues","\"electronic","\"industrial","\"industrial","\"reggae","\"jazz","\"country","\"doom metal","\"classic rock","\"cajun","\"classic rock","\"ambient","\"soul","\"classic rock","\"classic rock","\"reggae","\"country","\"Progressive rock","\"hard rock","\"trance","\"industrial","\"emo","\"soul","\"acid jazz","\"pop","\"House","\"electronic","\"House","\"Disco","\"cajun","\"House","\"Progressive rock","\"electronica","\"deep house","\"jazz","\"chillout","\"dance","\"electronic","\"House","\"Disco","\"House","\"acid jazz","\"ambient","\"chillout","\"dance","\"techno","\"Progressive rock","\"industrial","\"deep house","\"experimental","\"electronica","\"idm","\"ambient","\"experimental","\"idm","\"electronic","\"Progressive rock","\"Lo-Fi","\"Italo Disco","\"industrial","\"polish","\"cajun","\"singer-songwriter","\"reggae","\"pop","\"electronic","\"math rock","\"Disco","\"blues","\"electronic","\"Progressive rock","\"idm","\"industrial","\"singer-songwriter","\"Disco","\"Progressive rock","\"USA","\"soul","\"electro","\"pop","\"electro","\"classic rock","\"electro","\"Acid","\"coldwave","\"electronic","\"Hip-Hop","\"hard rock","\"Hip-Hop","\"electronic","\"experimental","\"ambient","\"jazz","\"math rock","\"hard rock","\"math rock","\"reggae","\"jazz","\"reggae","\"electronic","\"Disco","\"acid jazz","\"jazz","\"soul","\"chillout","\"reggae","\"country","\"soul","\"coldwave","\"soul","\"coldwave","\"deep house","\"microhouse","\"microhouse","\"deep house","\"80s","\"pop","\"soul","\"microhouse","\"Italo Disco","\"glam rock","\"soul","\"Disco","\"Disco","\"country","\"soul","\"northern soul","\"ska","\"jazz","\"polish","\"80s","\"polish","\"new wave","\"Lo-Fi","\"classic rock","\"Disco","\"classic rock","\"dance","\"glam rock","\"Disco","\"emo","\"emo","\"soul","\"soul","\"pop","\"House","\"soul","\"northern soul","\"Hip-Hop","\"ska","\"Hip-Hop","\"doom metal","\"new wave","\"coldwave","\"polish","\"math rock","\"hard rock","\"Progressive rock","\"classic rock","\"blues","\"reggae","\"glam rock","\"jazz","\"jazz","\"reggae","\"electronica","\"Disco","\"Acid","\"deep house","\"Lo-Fi","\"soul","\"classic rock","\"Disco","\"northern soul","\"Melodic Power Metal","\"emo","\"reggae","\"reggae","\"singer-songwriter","\"electronica","\"techno","\"Hip-Hop","\"blues","\"classic rock","\"reggae","\"Progressive rock","\"deep house","\"trance","\"Melodic Power Metal","\"Hip-Hop","\"Italo Disco","\"chillout","\"experimental","\"jazz","\"Hip-Hop","\"reggae","\"cajun","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"values":[1.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,7.33,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,3.0,1.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,5.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,4.0,4.0,15.0,16.0,16.0,4.0,4.0,4.0,12.0,2.0,4.0,4.0,4.0,4.0,4.0,20.0,4.0,4.0,4.0,12.0,4.0,4.0,14.0,4.0,4.0,4.0,4.0,4.0,4.0,8.0,12.0,4.0,4.0,4.0,4.0,4.0,8.0,12.0,8.0,3.0,26.0,4.0,2.0,1.0,1.0,1.0,7.33,2.0],"type":"sunburst"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"legend":{"tracegroupgap":0},"sunburstcolorway":["rgb(102, 197, 204)","rgb(246, 207, 113)","rgb(248, 156, 116)","rgb(220, 176, 242)","rgb(135, 197, 95)","rgb(158, 185, 243)","rgb(254, 136, 177)","rgb(201, 219, 116)","rgb(139, 224, 164)","rgb(180, 151, 231)","rgb(179, 179, 179)"],"height":600,"width":1000,"margin":{"t":80,"l":0,"r":0,"b":0},"title":{"text":"Genre and Subgenre Distribution (With Downscaled 'Unknown Genre')"}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('ab7feee7-af9e-421d-a4f0-b5b76727d073');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of genres on Octobar 2nd show
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
