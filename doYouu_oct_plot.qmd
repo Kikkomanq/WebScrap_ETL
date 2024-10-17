@@ -16,7 +16,7 @@ import pandas as pd
 import plotly.express as px
 
 # Path to your CSV file
-csv_file_path = 'tracks_table_with_genres_october_2.csv'
+csv_file_path = 'latest.csv'
 
 # Initialize lists to store genres and subgenres
 genres = []
@@ -61,6 +61,8 @@ df = pd.DataFrame({
 
 # Count the occurrences of each (genre, subgenre) pair
 subgenre_counts = df.groupby(["genre", "subgenre"]).size().reset_index(name="count")
+
+subgenre_counts["count"] = subgenre_counts["count"].astype(float)
 
 # Downscale the count of "Unknown genre" by 3x
 # This reduces the count to one-third of its original value
