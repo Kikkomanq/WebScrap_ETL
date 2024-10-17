@@ -6,7 +6,7 @@ format:
 jupyter: python3
 ---
 
-For a demonstration of a sunburst genre plot, see @fig-polar.
+Demonstration of a sunburst genre plot, for a given music show  [click here](https://doyoutrackid.com/tracks/2024-10-17).
 
 ```{python}
 #| label: fig-polar
