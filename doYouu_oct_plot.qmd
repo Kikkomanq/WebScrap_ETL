@@ -1,5 +1,5 @@
 ---
-title: "DoYOuu Oct 2nd"
+title: "DoYOuu Oct 17th"
 format:
   html:
     code-fold: true
